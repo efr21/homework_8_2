@@ -9,3 +9,4 @@ def browser_settings(scope="function"):
     browser.open('https://google.com')
     yield
     browser.quit()
+

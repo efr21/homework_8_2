@@ -13,3 +13,4 @@ def test_google_find_nothing(browser_settings):
     browser.element('[id="search"]').should(have.text(''))
     print("Google ничего не нашел")
 
+
