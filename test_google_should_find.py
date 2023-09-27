@@ -10,7 +10,7 @@ def test_google_find_selene(browser_settings):
 
 def test_google_find_nothing(browser_settings):
     browser.element('[name="q"]').should(be.blank).type('kjnfjvnsdfjvnjernonvndfnvf').press_enter()
-    browser.element('[id="search"]').should(have.text(''))
+    browser.element('[id="result-stats"]').should(have.text('Результатов: примерно 0'))
     print("Google ничего не нашел")
 
 
